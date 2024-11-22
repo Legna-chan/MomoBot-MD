@@ -32,14 +32,14 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 //let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
 
 //creador y otros
-global.creador = 'Wa.me/543876639332'
+global.creador = 'Wa.me/526671548329'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
-global.asistencia = 'Wa.me/543876577197'
-global.namechannel = 'Tҽαɱ Cԋαɳɳҽʅ ιαɳ 🌸 IαɳOϝƈ'
-global.namechannel2 = 'Tҽαɱ Cԋαɳɳҽʅ ιαɳ 🌸 IαɳOϝƈ'
-global.namegrupo = 'シ︎ 𝗜𝗮𝗻𝗕𝗼𝘁-𝗠𝗗 🌸 𝗠𝘂𝗹𝘁𝗶-𝗕𝗢𝗧𝗦'
-global.namecomu = '『✯ 𝗧𝗲𝗮𝗺 𝗖𝗼𝗺𝘂𝗻𝗶𝘁𝘆 𝗜𝗮𝗻 ✯』'
-global.namecomu2 = '☁ CorinPlus Host'
+global.asistencia = 'Wa.me/526677510398'
+global.namechannel = 'Channel MomoBot🌸 - MD'
+global.namechannel2 = 'Channel MomoBot🌸 - MD'
+global.namegrupo = 'シ︎ 𝗠𝗢𝗠𝗢𝗕𝗢𝗧-𝗠𝗗🌸 𝗚𝗥𝗨𝗣𝗢 𝗢𝗙𝗜𝗖𝗜𝗔𝗟'
+global.namecomu = 'Channel MomoBot🌸 - MD'
+global.namecomu2 = '☁ Hosting Py host'
 global.colab1 = '°•✮•°fαитαѕтι¢ ωσяℓ∂ σf αиιмє࿐ཽ༵'
 global.colab2 = '⋆⁺₊⋆ ☾⋆⁺₊⋆ 𝔸ᴍ𝕒ɴᴛᴇs ᴅᴇ ᴛᴏᴅ𝗼 Tɪᴘ𝗼 ᴅᴇ Mᴜsɪᴄ𝕒 ⋆⁺₊⋆ ☾⋆⁺₊⋆'
 global.colab3 = 'IAN-MoDe'
