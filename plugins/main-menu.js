@@ -32,7 +32,7 @@ const defaultMenu = {
 Holis *%name* soy momo belia :3
 
 ┏━━━━━━━━ EDITOR
-┃  🌸 @LegnaOfc13
+┃  🌸 Lҽɠɳα.xyz
 ┗━━━━━━━━━━━━━━
 %readmore
 ┏━━━━━━━━ INFO - BOT
