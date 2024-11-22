@@ -53,7 +53,7 @@ Holis *%name* soy momo belia :3
 
 \t*L I S T A  -  D E  -  C O M A N D O S* 
 `.trimStart(),
-    header: ' 🩷「 MENU 🪷 %category 」🩷\n ',
+    header: '「 MENU 🪷 %category 」\n ',
   body: '>🍡>%cmd',
   footer: '*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*\n',
   after: `> ${dev}`,
