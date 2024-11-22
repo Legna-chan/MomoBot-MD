@@ -7,16 +7,16 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
-    let welcome = `🍬≺ MOMO BOT - MD \n「 Bienvenido 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Bienvenido/a 」\n「 ${groupMetadata.subject} 」\n\n  @LegnaOfc13`
+    let welcome = `🍬≺ MOMO BOT - MD \n「 Bienvenido 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Bienvenido/a 」\n「 ${groupMetadata.subject} 」\n\n
 await conn.sendLuffy(m.chat, packname, textbot, welcome, img, img, redes, fkontak)
   }
 
   if (chat.welcome && m.messageStubType == 28) {
-    let bye = ` '🍬≺ MOMO BOT - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Se fue 」\n「 Vuelve pronto!! 」\n\n  @LegnaOfc13`
+    let bye = ` '🍬≺ MOMO BOT - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Se fue 」\n「 Vuelve pronto!! 」\n\n
 await conn.sendLuffy(m.chat, packname, textbot, bye, img, img, redes, fkontak)
   }
 
   if (chat.welcome && m.messageStubType == 32) {
-    let kick = ` '🍬≺ MOMO BOT - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Se fue 」\n「 Vuelve pronto!! 」\n\n  ιαɳαʅҽʝαɳԃɾσσƙ15x`
+    let kick = ` '🍬≺ MOMO BOT - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Se fue 」\n「 Vuelve pronto!! 」\n\n
 await conn.sendLuffy(m.chat, packname, textbot, kick, img, img, redes, fkontak)
 }}
