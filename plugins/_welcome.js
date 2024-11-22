@@ -12,7 +12,7 @@ await conn.sendLuffy(m.chat, packname, textbot, welcome, img, img, redes, fkonta
   }
 
   if (chat.welcome && m.messageStubType == 28) {
-    let bye = ` '🍬≺ MOMO BOT - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Sҽ ϝυҽ 」\n「 Nυɳƈα ƚҽ ϙυιʂιɱσʂ αϙυι 」\n\n  ιαɳαʅҽʝαɳԃɾσσƙ15x`
+    let bye = ` '🍬≺ MOMO BOT - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Sҽ ϝυҽ 」\n「 Vuelve pronto!! 」\n\n  ιαɳαʅҽʝαɳԃɾσσƙ15x`
 await conn.sendLuffy(m.chat, packname, textbot, bye, img, img, redes, fkontak)
   }
 
