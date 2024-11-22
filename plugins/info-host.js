@@ -1,22 +1,22 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let txt = `✨ *C O R I N - P L U S - H O S T* 
+let txt = `✨ *H O S T I N G P Y - H O S T* 
 
 *¿Quieres un Host de calidad y con bajos precios?*
-Pues te presento a *CorinPlusHost*, un hosting de calidad con servidores dedicados y precios por debajo de 1 USD, estos servidores están destinados a ofrecerte un Uptime 24/7 para que puedas alojar tus proyectos y qué estos funcionen de manera eficaz.
+Pues te presento a *HostingPy*,un hosting de calidad con servidores dedicados y precios de 1 USD, estos servidores están destinados a ofrecerte un Uptime 24/7 para que puedas alojar tus proyectos y qué estos funcionen de manera eficaz.
 
 🌺 \`\`\`Información del Host\`\`\`
 
 🌸 *Dashboard:* 
-• https://dash.corinplus.com
+• https://dahs.hostingpy.shop
 
 🍁 *Panel:*
-• https://panel.corinplus.com
+• https://panel.hostingpy.shop
 
 ☘ *Comunidad Oficial:*
-• https://chat.whatsapp.com/HR3OLhsuZPqCMImzuHcuON
+• https://chat.whatsapp.com/C92isvspFcXCtqv2PqCfHI
 
-🍂 *Contacto (Corin PLus Host - Asistencia)*
-https://wa.me/573147616444
+🍂 *Contacto (HostingPy - Asistencia)*
+https://wa.me/595976126756
 
 > *Únete a está comunidad y disfruta de un servicio de calidad ✨*` 
 await conn.sendMessage(m.chat, { text: txt,
@@ -26,11 +26,11 @@ isForwarded: false,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: `🍄 C O R I N - H O S T 🍄`,
+title: `🍄 H O S T I N G PY - H O S T 🍄`,
 body: `👑 Hosting 24/7 👑`,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://telegra.ph/file/934d7ab39d50f7560cef2.png', 
-sourceUrl: 'https://dash.corinplus.com'}}},
+thumbnailUrl: 'https://qu.ax/Txgln.jpg', 
+sourceUrl: 'https://dahs.hostingpy.shop'}}},
 { quoted: fkontak})
 }
 handler.tags = ['main'] 
