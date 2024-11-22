@@ -10,7 +10,7 @@ import moment from 'moment-timezone'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-   ['526671548329', '𝓛𝓮𝓰𝓷𝓪 ও', true],
+   ['526671548329', 'Legna', true],
    ['526677510398', 'Lisa', true],
 ]
 
@@ -31,9 +31,9 @@ global.languaje = 'Español'
 global.packname = '【 MomoBot-MD 】'
 global.botname = 'MomoBot-MD🌺'
 global.wm = 'Momo Belia Deviluke Bot'
-global.author = '𝓛𝓮𝓰𝓷𝓪 ও'
+global.author = 'LegnaOfc'
 global.dev = 'Powered By LegnaOfc🍓'
-global.textbot = 'Momo bot : 𝓛𝓮𝓰𝓷𝓪 ও'
+global.textbot = 'Momo Bella Deviluke'
 global.vs = '3.0.4'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
