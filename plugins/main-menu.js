@@ -32,21 +32,21 @@ const defaultMenu = {
 Holis *%name* soy momo belia :3
 
 ┏━━━━━━━━ EDITOR
-┃  ✿︎ LegnaOfc
+┃  🌸 LegnaOfc
 ┗━━━━━━━━━━━━━━
 %readmore
 ┏━━━━━━━━ INFO - BOT
-┃  ✿︎ Cliente: %name
-┃  ✿︎ Exp: %exp
-┃  ✿︎ Nivel: %level
+┃  𓍢ִ໋🌷͙֒ Cliente: %name
+┃  𓍢ִ໋🌷͙֒ Exp: %exp
+┃  𓍢ִ໋🌷͙֒ Nivel: %level
 ┗━━━━━━━━━━━━━━
 %readmore
 ┏━━━━━━━━━ INFO - USER
-┃  ✿︎ 🄱ot: MomoBot-MD 
-┃  ✿︎ 🄼odo Público
-┃  ✿︎ 🄱aileys: Multi Device
-┃  ✿︎ 🅃iempo Activa: %muptime
-┃  ✿︎ 🅄suarios: %totalreg 
+┃  𓍢ִ໋🌷͙֒ 🄱ot: MomoBot-MD 
+┃  𓍢ִ໋🌷͙֒ 🄼odo Público
+┃  𓍢ִ໋🌷͙֒ 🄱aileys: Multi Device
+┃  𓍢ִ໋🌷͙֒ 🅃iempo Activa: %muptime
+┃  𓍢ִ໋🌷͙֒ 🅄suarios: %totalreg 
 ┗━━━━━━━━━━━━━━
 %readmore
 *─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ─*
