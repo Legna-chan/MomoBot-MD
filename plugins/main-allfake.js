@@ -64,7 +64,7 @@ global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 
 //Enlaces
 var canal = 'https://whatsapp.com/channel/0029VajkZ6blXnlwPZmbuH1u'  
-var git = 'https://github.com/ianalejandrook15x' 
+var git = 'https://github.com/Legna-chan' 
 var youtube = 'https://www.youtube.com/@ianalejandrook14' 
 var github = 'https://github.com/ianalejandrook15x/ianxdd' 
 var facebook = 'https://www.facebook.com/ianalejandrook13?mibextid=ZbWKwL' 
@@ -98,7 +98,7 @@ global.fkontak = { key: { participants:"0@s.whatsapp.net", "remoteJid": "status@
 
 // global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "3876577197-120363302285079181@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
 
-global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: "Tҽαɱ Cԋαɳɳҽʅ ιαɳ 🌸 IαɳOϝƈ", serverMessageId: -1 }
+global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: "Channel MomoBot-MD🌸", serverMessageId: -1 }
 }}, { quoted: m }
   
 global.icono = [ 
@@ -110,6 +110,6 @@ global.icono = [
 'https://qu.ax/cvZCa.jpg',
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363318758721861@newsletter", serverMessageId: 100, newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ ιαɳ 🌸 IαɳOϝƈ', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌸 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363318758721861@newsletter", serverMessageId: 100, newsletterName: 'Channel MomoBot🌸 - MD', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌸 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
