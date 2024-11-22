@@ -35,10 +35,10 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 global.creador = 'Wa.me/5216671548329'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/5216677510398'
-global.namechannel = 'Channel MomoBotMD🌸'
-global.namechannel2 = 'Channel MomoBotMD🌸'
+global.namechannel = '© Channel - MomoBotMD'
+global.namechannel2 = ''© Channel - MomoBotMD'
 global.namegrupo = 'シ︎ 𝗠𝗢𝗠𝗢𝗕𝗢𝗧-𝗠𝗗 𝗚𝗥𝗨𝗣𝗢 𝗢𝗙𝗜𝗖𝗜𝗔𝗟🌸'
-global.namecomu = 'Channel MomoBotMD🌸'
+global.namecomu = ''© Channel - MomoBotMD'
 global.namecomu2 = '☁ Hosting Py host'
 global.colab1 = '°•✮•°fαитαѕтι¢ ωσяℓ∂ σf αиιмє࿐ཽ༵'
 global.colab2 = '⋆⁺₊⋆ ☾⋆⁺₊⋆ 𝔸ᴍ𝕒ɴᴛᴇs ᴅᴇ ᴛᴏᴅ𝗼 Tɪᴘ𝗼 ᴅᴇ Mᴜsɪᴄ𝕒 ⋆⁺₊⋆ ☾⋆⁺₊⋆'
@@ -110,6 +110,6 @@ global.icono = [
 'https://qu.ax/cvZCa.jpg',
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363318758721861@newsletter", serverMessageId: 100, newsletterName: 'Channel MomoBot-MD🌸', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌸 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363318758721861@newsletter", serverMessageId: 100, newsletterName: ''© Channel - MomoBotMD', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌸 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
