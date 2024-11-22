@@ -29,16 +29,16 @@ console.log(`Error : ${e}`)
 
 let pp = ''
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-//let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
+//let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/tQXLN.jpg')
 
 //creador y otros
-global.creador = 'Wa.me/526671548329'
+global.creador = 'Wa.me/5216671548329'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
-global.asistencia = 'Wa.me/526677510398'
-global.namechannel = 'Channel MomoBot🌸 - MD'
-global.namechannel2 = 'Channel MomoBot🌸 - MD'
-global.namegrupo = 'シ︎ 𝗠𝗢𝗠𝗢𝗕𝗢𝗧-𝗠𝗗🌸 𝗚𝗥𝗨𝗣𝗢 𝗢𝗙𝗜𝗖𝗜𝗔𝗟'
-global.namecomu = 'Channel MomoBot🌸 - MD'
+global.asistencia = 'Wa.me/5216677510398'
+global.namechannel = 'Channel MomoBotMD🌸'
+global.namechannel2 = 'Channel MomoBotMD🌸'
+global.namegrupo = 'シ︎ 𝗠𝗢𝗠𝗢𝗕𝗢𝗧-𝗠𝗗 𝗚𝗥𝗨𝗣𝗢 𝗢𝗙𝗜𝗖𝗜𝗔𝗟🌸'
+global.namecomu = 'Channel MomoBotMD🌸'
 global.namecomu2 = '☁ Hosting Py host'
 global.colab1 = '°•✮•°fαитαѕтι¢ ωσяℓ∂ σf αиιмє࿐ཽ༵'
 global.colab2 = '⋆⁺₊⋆ ☾⋆⁺₊⋆ 𝔸ᴍ𝕒ɴᴛᴇs ᴅᴇ ᴛᴏᴅ𝗼 Tɪᴘ𝗼 ᴅᴇ Mᴜsɪᴄ𝕒 ⋆⁺₊⋆ ☾⋆⁺₊⋆'
@@ -63,10 +63,10 @@ global.waittt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗼...*';
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029VajkZ6blXnlwPZmbuH1u'  
+var canal = 'https://whatsapp.com/channel/0029Vavnhn0AojZ2SQ9Dur03'  
 var git = 'https://github.com/Legna-chan' 
 var youtube = 'https://www.youtube.com/@ianalejandrook14' 
-var github = 'https://github.com/ianalejandrook15x/ianxdd' 
+var github = 'https://github.com/Legna-chan' 
 var facebook = 'https://www.facebook.com/ianalejandrook13?mibextid=ZbWKwL' 
 let tiktok = 'https://tiktok.com/@ian.ian271'
 let correo = 'sm.iam1836@gmail.com'
@@ -110,6 +110,6 @@ global.icono = [
 'https://qu.ax/cvZCa.jpg',
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363318758721861@newsletter", serverMessageId: 100, newsletterName: 'Channel MomoBot🌸 - MD', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌸 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363318758721861@newsletter", serverMessageId: 100, newsletterName: 'Channel MomoBot-MD🌸', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌸 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
