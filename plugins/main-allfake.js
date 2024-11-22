@@ -102,12 +102,12 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 }}, { quoted: m }
   
 global.icono = [ 
-'https://qu.ax/PqLcf.jpg',
-'https://qu.ax/NblnX.jpg',
-'https://qu.ax/bavxU.jpg',
-'https://qu.ax/SljFc.jpg',
-'https://qu.ax/NblnX.jpg',
-'https://qu.ax/PqLcf.jpg',
+'https://qu.ax/eLMsM.jpg',
+'https://qu.ax/xCaaE.jpg',
+'https://qu.ax/HtVtJ.jpg',
+'https://qu.ax/EWqEy.jpg',
+'https://qu.ax/rPmsZ.jpg',
+'https://qu.ax/cvZCa.jpg',
 ].getRandom()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363318758721861@newsletter", serverMessageId: 100, newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ ιαɳ 🌸 IαɳOϝƈ', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌸 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
