@@ -1,10 +1,10 @@
 import { search, download } from 'aptoide-scraper'
 
 var handler = async (m, {conn, usedPrefix, command, text}) => {
-if (!text) return conn.reply(m.chat, '🌸 *Iɳɠɾҽʂҽ ҽʅ ɳσɱზɾҽ ԃҽ ʅα αρƙ ραɾα ԃҽʂƈαɾɠαɾʅσ.*', m, rcanal)
+if (!text) return conn.reply(m.chat, '🌸 *Ingrese el nombre de la apk para descargarlo.*', m, rcanal)
 try {
 await m.react(rwait)
-conn.reply(m.chat, '🌸 *Eʂρҽɾҽ υɳ ɱσɱҽɳƚσ...*', m, {
+conn.reply(m.chat, '🌸 *Espera un momento...*', m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: dev,
@@ -13,10 +13,10 @@ sourceUrl: channel }}})
 let searchA = await search(text)
 let data5 = await download(searchA[0].id)
 let txt = `*DESCARGAS MOD APK* 乂\n\n`
-txt += `🌙 *Nombre* : ${data5.name}\n`
-txt += `🌙 *Package* : ${data5.package}\n`
-txt += `🌙 *Update* : ${data5.lastup}\n`
-txt += `🌙 *Peso* :  ${data5.size}`
+txt += `🌺 *Nombre* : ${data5.name}\n`
+txt += `🌺 *Package* : ${data5.package}\n`
+txt += `🌺 *Update* : ${data5.lastup}\n`
+txt += `🌺 *Peso* :  ${data5.size}`
 await conn.sendFile(m.chat, data5.icon, 'thumbnail.jpg', txt, m, null, rcanal) 
 await m.react(done)  
 if (data5.size.includes('GB') || data5.size.replace(' MB', '') > 999) {
