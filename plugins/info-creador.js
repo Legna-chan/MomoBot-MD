@@ -18,13 +18,13 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let pp = await conn.profilePictureUrl(who).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
 let biografia = await conn.fetchStatus('5493876432076' +'@s.whatsapp.net').catch(_ => 'Hσʅα ɱҽ ʅʅαɱσ Iαɳ ყ ʂσყ ԃυҽñσ ԃҽ IAN-BOT')
-let biografiaBot = await conn.fetchStatus(`${conn.user.jid.split('@')[0]}` +'@s.whatsapp.net').catch(_ => 'Hσʅα ɱҽ ʅʅαɱσ Iαɳ ყ ʂσყ ԃυҽñσ ԃҽ IAN-BOT')
+let biografiaBot = await conn.fetchStatus(`${conn.user.jid.split('@')[0]}` +'@s.whatsapp.net').catch(_ => 'Hola me llamo legna soy editor de MomoBot-MD')
 let bio = biografia.status?.toString() || 'Hσʅα ɱҽ ʅʅαɱσ Iαɳ ყ ʂσყ ԃυҽñσ ԃҽ IAN-BOT'
 let biobot = biografiaBot.status?.toString() || 'Hσʅα ɱҽ ʅʅαɱσ Iαɳ ყ ʂσყ ԃυҽñσ ԃҽ IAN-BOT'
 let name = await conn.getName(who)
 
 await sendContactArray(conn, m.chat, [
-[`526671548329`, `🌙 Propietario`, `🌸 𝓛𝓮𝓰𝓷𝓪 ও `, dev, correo, `🎌 Tokio`, `${yt}`, bio],
+[`526671548329`, `🌙 Propietario`, `🌸 Legna `, dev, correo, `🎌 Tokio`, `${yt}`, bio],
 [`${conn.user.jid.split('@')[0]}`, `Eʂ υɳ ზσƚ`, `${wm}`, `📵 Nσ ԋαƈҽɾ ʂραɱ`, correo, `🎌 Tokio`, md, biobot]
 ], m)
 
