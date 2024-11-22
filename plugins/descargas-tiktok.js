@@ -1,85 +1,69 @@
-import yts from 'yt-search'
-import fs from 'fs'
-import os from 'os'
-import axios from 'axios'
+import fetch from 'node-fetch'
+import ffmpeg from "fluent-ffmpeg"
 
-const handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw m.reply(`✧ Ejemplo de uso: ${usedPrefix}${command} Joji - Ew`);
+var handler = async (m, { conn, args, usedPrefix, command }) => {
+    if (!args[0]) {
+        throw m.reply(`*🌸 Ejemplo: ${usedPrefix + command
+        } https://vm.tiktok.com/ZMhAk8tLx/`);
+    }
 
-  const search = await yts(text);
-  const vid = search.videos[0];
-  if (!vid) throw m.reply('Data no encontrada, intenta con otro titulo');
+    try {
+        await conn.reply ( m.chat, "🌷 Espere un momento, estoy descargando su video...", m, );
 
-  const { title, thumbnail, timestamp, views, ago, url } = vid;
+        const tiktokData = await tiktokdl(args[0]);
 
-await conn.sendMessage(m.chat, { react: { text: '🕒', key: m.key }})
-//  await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: wait }, { quoted: m });
-
-  try {
-    const response = await axios.get(`https://api.ryzendesu.vip/api/downloader/ytmp3?url=${encodeURIComponent(url)}`);
-    const downloadUrl = response.data.url;
-
-    if (!downloadUrl) throw new Error('Audio URL not found');
-
-    const tmpDir = os.tmpdir();
-    const filePath = `${tmpDir}/${title}.mp3`;
-
-    const audioResponse = await axios({
-      method: 'get',
-      url: downloadUrl,
-      responseType: 'stream',
-    });
-
-    const writableStream = fs.createWriteStream(filePath);
-    audioResponse.data.pipe(writableStream);
-
-    writableStream.on('finish', async () => {
-      await conn.sendMessage(m.chat, {
-        audio: {
-          url: filePath
-        },
-        mimetype: 'audio/mpeg',
-        fileName: `${title}.mp3`,
-        caption: `Titilo: ${title}\nPublicado: ${ago}`,
-        contextInfo: {
-          externalAdReply: {
-            showAdAttribution: true,
-            mediaType: 2,
-            mediaUrl: url,
-            title: title,
-            body: 'Audio Download',
-            sourceUrl: url,
-            thumbnail: await (await conn.getFile(thumbnail)).data,
-          },
-        },
-      }, { quoted: m });
-await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key }})
-
-      fs.unlink(filePath, (err) => {
-        if (err) {
-          console.error(`Failed to delete audio file: ${err}`);
-        } else {
-          console.log(`Deleted audio file: ${filePath}`);
+        if (!tiktokData) {
+            throw m.reply("Error api!");
         }
-      });
-    });
 
-    writableStream.on('error', (err) => {
-      console.error(`Failed to write audio file: ${err}`);
-      m.reply('Failed to download audio');
-    });
-  } catch (error) {
-    console.error('Error:', error.message);
-    throw `Error: ${error.message}. Please check the URL and try again.`;
-  }
+        const videoURL = tiktokData.data.play;
+        const videoURLWatermark = tiktokData.data.wmplay;
+        const infonya_gan = `*📖 Descripción:* ${tiktokData.data.title}\n*🚀 Publicado:* ${tiktokData.data.create_time
+            }\n\n*⚜️ Estado:*\n=====================\nLikes = ${tiktokData.data.digg_count
+            }\nComentarios = ${tiktokData.data.comment_count}\nCompartidas = ${tiktokData.data.share_count
+            }\nVistas = ${tiktokData.data.play_count}\nDescargas = ${tiktokData.data.download_count
+            }\n=====================\n\nUploader: ${tiktokData.data.author.nickname || "No info"
+            }\n(${tiktokData.data.author.unique_id} - https://www.tiktok.com/@${tiktokData.data.author.unique_id
+            } )\n*🔊 Sonido:* ${tiktokData.data.music
+            }\n`;
+
+        if (videoURL || videoURLWatermark) {
+            await conn.sendFile( m.chat, videoURL, "tiktok.mp4", "`DESCARGA DE TIKTOK`"+`\n\n${infonya_gan}`, m, );
+            setTimeout(async () => {
+                //await conn.sendFile( m.chat, videoURLWatermark, "tiktokwm.mp4", `*Ini Versi Watermark*\n\n${infonya_gan}`, m, );
+                await conn.sendFile( m.chat, `${tiktokData.data.music}`, "lagutt.mp3", "", m, );
+                //conn.reply( m.chat, "•⩊• Ini kak Videonya ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა\nDitonton yah ₍^ >ヮ<^₎", m, );
+            }, 1500);
+        } else {
+            throw m.reply("No se pudo descargar.");
+        }
+    } catch (error1) {
+        conn.reply(m.chat, `Error: ${error1}`, m);
+    }
 };
 
-handler.help = ['play'].map((v) => v + ' *<consulta>*');
-handler.tags = ['downloader'];
-handler.command = /^(play)$/i;
+handler.help = ['tiktok'].map((v) => v + ' *<link>*')
+handler.tags = ['descargas']
+handler.command = /^t(t|iktok(d(own(load(er)?)?|l))?|td(own(load(er)?)?|l))$/i
 
-handler.register = true
 handler.disable = false
+handler.register = true
+handler.limit = true
 
 export default handler
- 
+
+async function tiktokdl(url) {
+    let tikwm = `https://www.tikwm.com/api/?url=${url}?hd=1`
+    let response = await (await fetch(tikwm)).json()
+    return response
+}
+
+async function convertVideoToMp3(videoUrl, outputFileName) {
+    return new Promise((resolve, reject) => {
+        ffmpeg(videoUrl)
+            .toFormat("mp3")
+            .on("end", () => resolve())
+            .on("error", (err) => reject(err))
+            .save(outputFileName);
+    });
+}
