@@ -31,9 +31,9 @@ global.languaje = 'Español'
 global.packname = '【 MomoBot-MD 】'
 global.botname = 'MomoBot-MD🌺'
 global.wm = 'Momo Belia Deviluke Bot'
-global.author = '@LegnaOfc13'
+global.author = 'By Lҽɠɳα.xyz'
 global.dev = 'Powered By @LegnaOfc13'
-global.textbot = 'Momo Belia Deviluke'
+global.textbot = '© 𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 Lҽɠɳα.xyz🌸'
 global.vs = '3.0.4'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
